@@ -1,0 +1,2 @@
+<?
+	echo 'МойСклад payments module';

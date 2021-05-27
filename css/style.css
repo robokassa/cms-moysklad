@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("fonts/HelveticaNeueCyr-Roman.eot");
+  src: local("HelveticaNeueCyr-Roman"), url("fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("fonts/HelveticaNeu	eCyr-Roman.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+HTML, BODY		{font-family:'HelveticaNeueCyr'; font-size:10pt; background-color:#FFF;}
+
+
+TD	{white-space:nowrap; width:40px; font-size:10pt;}
+TH	{background-color:#F0F0F0; font-size:10pt;}
+
+HR			{margin:20px 0;}
+
+.field LABEL	{display:inline-block; width:235px; text-align:right; margin-right:12px;}
+.field			{margin:8px 0;}
+INPUT + .hint	{margin-left:250px;}
+LABEL.option	{text-align:left;}
+
+.hint			{opacity:0.7; font-size:80%;}
+.info			{color:#888;}
+
+.alert			{text-align:center; padding:20px; cursor:pointer;}
+.alert.ok		{padding:30px 20px; color:#0CBB0C; border:1px solid #0CBB0C;}
+
+.h2				{font-weight:bold; font-size:12pt;}
+
+#copy			{cursor:pointer;}
+#copy_result	{color:#3BBB66;}
+
+.robo-sklad			{width:380px;}
+.robo-sklad	> DIV	{height:42px;}	
+.robo-sklad BUTTON	{padding:8px 15px; width:auto; height:auto; font-weight:normal;   display: inline-block;  vertical-align: middle;}
+.robo-sklad .ok		{color:#138535;}
+.robo-sklad .error	{color:#FF0000;}
+.robo-sklad LABEL	{width:120px; display:inline-block;}
+
+#robo_copy_link			{display:inline-block; width:40px; height:40px; cursor:pointer; background:url(../img/icon-copy.png) center center no-repeat #FFF; margin-left:15px;}
+#robo_copy_link:hover	{background:url(../img/icon-copy-hover.png) center center no-repeat #FFF;}
+
+#robo_send_link			{display:inline-block; width:40px; height:40px; cursor:pointer; background:url(../img/icon-email.png) center center no-repeat #FFF; margin-left:15px;}
+

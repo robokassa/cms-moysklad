@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Письмо с описанием заказа</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f2f6f8" style="padding: 20px 60px 30px 60px;">
+    <tr>
+     <td>
+      <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="left" style="border-collapse: collapse;">
+              <tr>
+                <td style="padding-bottom: 20px;">
+                  <img src="{base_url}img/icon-logo.png" width="174" height="40" style="display: block;" alt="">
+                </td>
+              </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" width="100%" align="center" style="border-radius: 2px; padding: 40px 20px 20px 20px;" bgcolor="#ffffff">
+              <tr>
+                <td style="padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 34px; font-weight: 700; color: #263238;" align="left">
+                  Вам выставлен счёт на {total} ₽
+                </td>
+              </tr>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 25px; font-weight: 400; color: #546e7a;">
+                  Здравствуйте. Вам выставлен счёт на оплату заказа {shop_name}.
+                </td>
+              </tr>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0 20px 10px 20px;" bgcolor="#ffffff">
+                <tr>
+                  <td width="102" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 19px; font-weight: 400; color: #90a4ae;">
+                    N cчёта:
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="23">
+                    &nbsp;
+                  </td>
+                  <td width="205" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 23px; font-weight: 700; color: #37474f;">
+                    {invoice_num}
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="230">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0 20px 10px 20px;" bgcolor="#ffffff">
+                <tr>
+                  <td width="102" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 19px; font-weight: 400; color: #90a4ae;">
+                    Выставлен:
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="23">
+                    &nbsp;
+                  </td>
+                  <td width="205" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 23px; font-weight: 700; color: #37474f; ">
+                    {invoice_date}
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="230">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+			  <!--
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0 20px 10px 20px;" bgcolor="#ffffff">
+                <tr>
+                  <td width="102" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 19px; font-weight: 400; color: #90a4ae;">
+                    Оплатить до:
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="23">
+                    &nbsp;
+                  </td>
+                  <td width="205" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 23px; font-weight: 700; color: #37474f;">
+                    09.06.2020
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="230">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+			  -->
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0 20px 20px 20px;" bgcolor="#ffffff">
+                <tr>
+                  <td width="102" valign="top" style="padding: 10px 0 10px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 19px; font-weight: 400; color: #90a4ae;" align="left">
+                    Сумма заказа:
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="23">
+                    &nbsp;
+                  </td>
+                  <td width="205" valign="top" style="padding: 10px 0 10px 0; font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 23px; font-weight: 700; color: #37474f;">
+                    {total} ₽ 
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="230">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="560" style="padding: 0 20px 20px 20px;" bgcolor="#ffffff">
+                  <tr width="520">
+                    <td>
+                      <a style="display: block; width: 520px; text-decoration: none; padding: 12px 20px 12px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 19px; line-height: 26px; font-weight: 700; color: #ffffff; border-radius: 4px; background-color: #9ccc65;" align="center" href="{link}">Перейти к оплате</a>
+                    </td>
+                  </tr>
+                </table>
+              <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="padding: 20px 0 20px 0;">
+                <tr>
+                  <td width="175" valign="top">
+                    <a href="">
+                      <img src="{base_url}img/icon-master.png" width="175" height="30" alt="">
+                    </a>
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="5">
+                    &nbsp;
+                  </td>
+                  <td width="30" valign="top">
+                    <a href="">
+                      <img src="{base_url}img/icon-qiwi.png" width="30" height="30" alt="">
+                    </a>
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="5">
+                    &nbsp;
+                  </td>
+                  <td width="30" valign="top">
+                    <a href="">
+                      <img src="{base_url}img/icon-yandex.png" width="30" height="30" alt="">
+                    </a>
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="5">
+                    &nbsp;
+                  </td>
+                  <td width="30" valign="top">
+                    <a href="">
+                      <img src="{base_url}img/icon-points.png" width="30" height="30" alt="">
+                    </a>
+                  </td>
+                  <td style="font-size: 0; line-height: 0;" width="45">
+                    &nbsp;
+                  </td>
+                  <td width="275" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: 400; color: #90a4ae;" align="right">
+                    Безопасная оплата через Robokassa
+                  </td>
+                </tr>
+              </table>
+
+              <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="padding: 0 0 0 0;">
+                <tr>
+                  <td width="100%" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px; font-weight: 400; color: #90a4ae;" align="center">
+                    Если у вас возникли проблемы с платежом, <a style="color: #90a4ae;" href="">обратитесь в службу поддержки</a>
+                  </td>
+                </tr>
+              </table>
+            </table>
+          </td>
+        </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+</body>
+
+</html>

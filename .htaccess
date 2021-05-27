@@ -1,0 +1,15 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteRule ^sklad/(.*)$		sklad.php?%{QUERY_STRING} [L]
+RewriteRule ^sklad-settings(.*)$		sklad-settings.php?%{QUERY_STRING} [L]
+RewriteRule ^payment_form/(.*)$		payment_form.php?code=$1 [L]
+
+RewriteCond %{SCRIPT_FILENAME}			!-d
+RewriteCond %{SCRIPT_FILENAME}			!-f
+RewriteRule ^([a-zA-Z0-9\-]+)(.*)$		index.php [L]
+
+ErrorDocument	404 "We don't know about this page :("
